@@ -1,7 +1,7 @@
 public class CarCalculator
 {
     private static final double BASE_PRICE = 12000.0;
-
+    ///
     public enum Color {
         WHITE(1.0),
         BLUE(1.0),
@@ -39,8 +39,25 @@ public class CarCalculator
             return coefficient;
         }
     }
+    public enum Class {
+        ECONOMY(1.0),
+        COMFORT(1.3),
+        COMFORT_PLUS(1.6),
+        BUSINESS(1.8),
+        ULTIMATE(2.0);
 
-    public static double calculatePaintingCost(Part part, Color color) {
-        return BASE_PRICE * part.getCoefficient() * color.getCoefficient();
+        private final double coefficient;
+
+        Class(double coefficient) {
+            this.coefficient = coefficient;
+        }
+
+        public double getCoefficient() {
+            return coefficient;
+        }
+    }
+    ///
+    public static double calculatePaintingCost(Part part, Color color, Class carClass) {
+        return BASE_PRICE * part.getCoefficient() * color.getCoefficient() * carClass.getCoefficient();
     }
 }
