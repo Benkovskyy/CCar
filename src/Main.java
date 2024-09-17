@@ -19,6 +19,7 @@ public class Main {
             // Преобразуем ввод в enum
             CarCalculator.Part part = CarCalculator.Part.valueOf(partInput);
             CarCalculator.Color color = CarCalculator.Color.valueOf(colorInput);
+            CarCalculator.Class carClass = CarCalculator.Class.valueOf(classInput);
 
             // Рассчитываем стоимость покраски
             double cost = CarCalculator.calculatePaintingCost(part, color);
