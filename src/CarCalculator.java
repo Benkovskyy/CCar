@@ -1,7 +1,7 @@
 public class CarCalculator
 {
     private static final double BASE_PRICE = 12000.0;
-
+///
     public enum Color {
         WHITE(1.0),
         BLUE(1.0),
