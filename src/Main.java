@@ -5,11 +5,11 @@ public class Main {
 
         // Ввод данных для детали
         System.out.println("Введите наименование детали (HOOD, FRONT_DOOR, REAR_DOOR, FRONT_BUMPER, REAR_BUMPER, ROOF):");
-        java.lang.String partInput = scanner.nextLine().toUpperCase();
+        String partInput = scanner.nextLine().toUpperCase();
 
         // Ввод данных для цвета
         System.out.println("Введите цвет (WHITE, BLUE, YELLOW, RED, PEARLESCENT, METALLIC_GRAY):");
-        java.lang.String colorInput = scanner.nextLine().toUpperCase();
+        String colorInput = scanner.nextLine().toUpperCase();
 
         try {
             // Преобразуем ввод в enum
@@ -21,9 +21,7 @@ public class Main {
 
             // Выводим результат
             System.out.printf("Стоимость покраски детали %s в цвет %s составляет %.2f рублей%n", partInput, colorInput, cost);
-        }
-        catch (IllegalArgumentException e)
-        {
+        } catch (IllegalArgumentException e) {
             System.out.println("Неверное название детали или цвета. Пожалуйста, повторите ввод.");
         }
     }
