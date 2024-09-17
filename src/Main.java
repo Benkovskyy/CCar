@@ -11,6 +11,7 @@ public class Main {
         System.out.println("Введите цвет (WHITE, BLUE, YELLOW, RED, PEARLESCENT, METALLIC_GRAY):");
         String colorInput = scanner.nextLine().toUpperCase();
 
+         bugfix/crush_files
         // Ввод данных для класса авто
         System.out.println("Введите класс машины (ECONOMY, COMFORT, COMFORT_PLUS, BUSINESS, ULTIMATE)");
         String classInput = scanner.nextLine().toUpperCase();
@@ -22,7 +23,7 @@ public class Main {
             CarCalculator.Class carClass = CarCalculator.Class.valueOf(classInput);
 
             // Рассчитываем стоимость покраски
-            double cost = CarCalculator.calculatePaintingCost(part, color, carClass);
+            double cost = CarCalculator.calculatePaintingCost(part, color);
 
             // Выводим результат
             System.out.printf("Стоимость покраски детали %s в цвет %s составляет %.2f рублей%n", partInput, colorInput, cost);
