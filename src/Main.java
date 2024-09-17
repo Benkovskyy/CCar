@@ -11,6 +11,10 @@ public class Main {
         System.out.println("Введите цвет (WHITE, BLUE, YELLOW, RED, PEARLESCENT, METALLIC_GRAY):");
         String colorInput = scanner.nextLine().toUpperCase();
 
+        // Ввод данных для класса авто
+        System.out.println("Введите класс машины (ECONOMY, COMFORT, COMFORT_PLUS, BUSINESS, ULTIMATE)");
+        String classInput = scanner.nextLine().toUpperCase();
+
         try {
             // Преобразуем ввод в enum
             CarCalculator.Part part = CarCalculator.Part.valueOf(partInput);
