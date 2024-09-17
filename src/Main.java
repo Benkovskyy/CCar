@@ -15,9 +15,10 @@ public class Main {
             // Преобразуем ввод в enum
             CarCalculator.Part part = CarCalculator.Part.valueOf(partInput);
             CarCalculator.Color color = CarCalculator.Color.valueOf(colorInput);
-
+            CarCalculator.Class carClass = CarCalculator.Class.valueOf(classInput);
             // Рассчитываем стоимость покраски
-            double cost = CarCalculator.calculatePaintingCost(part, color);
+            double cost = CarCalculator.calculatePaintingCost(part, color, carClass);
+
 
             // Выводим результат
             System.out.printf("Стоимость покраски детали %s в цвет %s составляет %.2f рублей%n", partInput, colorInput, cost);
