@@ -6,7 +6,7 @@ public class CarCalculator {
         BLUE(1.0),
         YELLOW(1.1),
         RED(1.0),
-        PEARLESCENT(1.2),
+        PREADOLESCENT(1.2),
         METALLIC_GRAY(1.3);
 
         private final double coefficient;

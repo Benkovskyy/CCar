@@ -12,7 +12,7 @@ public class Main {
         String colorInput = scanner.nextLine().toUpperCase();
 
         // Ввод данных для класса авто
-        System.out.println("Введите класс машины (ECONOMY COMFORT COMFORT_PLUS BUSINESS ULTIMATE");
+        System.out.println("Введите класс машины (ECONOMY, COMFORT, COMFORT_PLUS, BUSINESS, ULTIMATE)");
         String classInput = scanner.nextLine().toUpperCase();
 
         try {
