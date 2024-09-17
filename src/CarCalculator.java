@@ -7,7 +7,7 @@ public class CarCalculator
         BLUE(1.0),
         YELLOW(1.1),
         RED(1.0),
-        PEARLESCENT(1.2),
+        PREADOLESCENT(1.2),
         METALLIC_GRAY(1.3);
 
         private final double coefficient;
@@ -32,6 +32,23 @@ public class CarCalculator
         private final double coefficient;
 
         Part(double coefficient) {
+            this.coefficient = coefficient;
+        }
+
+        public double getCoefficient() {
+            return coefficient;
+        }
+    }
+    public enum Class {
+        ECONOMY(1.0),
+        COMFORT(1.3),
+        COMFORT_PLUS(1.6),
+        BUSINESS(1.8),
+        ULTIMATE(2.0);
+
+        private final double coefficient;
+
+        Class(double coefficient) {
             this.coefficient = coefficient;
         }
 
