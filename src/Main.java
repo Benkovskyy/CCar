@@ -11,7 +11,6 @@ public class Main {
         System.out.println("Введите цвет (WHITE, BLUE, YELLOW, RED, PEARLESCENT, METALLIC_GRAY):");
         String colorInput = scanner.nextLine().toUpperCase();
 
-         bugfix/crush_files
         // Ввод данных для класса авто
         System.out.println("Введите класс машины (ECONOMY, COMFORT, COMFORT_PLUS, BUSINESS, ULTIMATE)");
         String classInput = scanner.nextLine().toUpperCase();
