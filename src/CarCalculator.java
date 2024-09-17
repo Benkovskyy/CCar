@@ -57,11 +57,7 @@ public class CarCalculator
         }
     }
    ///
-    public static double calculatePaintingCost(Part part, Color color) {
-        return BASE_PRICE * part.getCoefficient() * color.getCoefficient();
-    }
-}
-    public static double calculatePaintingCost(Part part, Color color) {
-        return BASE_PRICE * part.getCoefficient() * color.getCoefficient();
+     public static double calculatePaintingCost(Part part, Color color, Class carClass) {
+        return BASE_PRICE * part.getCoefficient() * color.getCoefficient() * carClass.getCoefficient();
     }
 }
