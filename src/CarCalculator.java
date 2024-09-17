@@ -1,4 +1,4 @@
-Class CarCalculator
+public class CarCalculator
 {
     private static final double BASE_PRICE = 12000.0;
 ///
