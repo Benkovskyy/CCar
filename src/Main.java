@@ -12,7 +12,7 @@ public class Main {
         String colorInput = scanner.nextLine().toUpperCase();
 
         // Ввод данных для класса авто
-        System.out.println("Введите класс машины (ECONOMY, COMFORT, COMFORT_PLUS, BUSINESS, ULTIMATE)");
+        System.out.println("Введите класс машины (ECONOMY, COMFORT, COMFORT_PLUS, BUSINESS, ULTIMATE,");
         String classInput = scanner.nextLine().toUpperCase();
 
         try {
@@ -22,13 +22,12 @@ public class Main {
             CarCalculator.Class carClass = CarCalculator.Class.valueOf(classInput);
 
             // Рассчитываем стоимость покраски
-            double cost = CarCalculator.calculatePaintingCost(part, color);
+            double cost = CarCalculator.calculatePaintingCost(part, color, carClass);
 
             // Выводим результат
             System.out.printf("Стоимость покраски детали %s в цвет %s составляет %.2f рублей%n", partInput, colorInput, cost);
         } catch (IllegalArgumentException e) {
             System.out.println("Неверное название детали или цвета. Пожалуйста, повторите ввод.");
-            ///
         }
     }
 }
