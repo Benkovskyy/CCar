@@ -56,7 +56,7 @@ public class CarCalculator
             return coefficient;
         }
     }
-
+   ///
     public static double calculatePaintingCost(Part part, Color color) {
         return BASE_PRICE * part.getCoefficient() * color.getCoefficient();
     }

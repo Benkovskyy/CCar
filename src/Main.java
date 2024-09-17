@@ -28,6 +28,7 @@ public class Main {
             System.out.printf("Стоимость покраски детали %s в цвет %s составляет %.2f рублей%n", partInput, colorInput, cost);
         } catch (IllegalArgumentException e) {
             System.out.println("Неверное название детали или цвета. Пожалуйста, повторите ввод.");
+            //
         }
     }
 }
